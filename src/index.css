@@ -139,8 +139,8 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-73%, -138%);
-    font-size: 8.4vw;
+    transform: translate(-80%, -138%);
+    font-size: 6vw;
     line-height: 1;
     letter-spacing: -0.05em;
     font-weight: 600;
