@@ -50,7 +50,8 @@ button {
 
 .card {
   width: 190px;
-  height: 254px;
+  min-height: 254px;
+  height: fit-content;
   /* margin: 0 auto; */
   background-color: #5faeb6;
   border-radius: 8px;
@@ -89,4 +90,36 @@ button {
 }
 .card__content {
   padding: 3px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 505px) {
+  input {
+    font-size: 12px;
+    padding: 13px;
+    padding-left: 20px;
+    margin-left: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  button {
+    padding: 14.5px;
+    text-transform: uppercase;
+    min-width: 120px;
+    font-size: 10px;
+    margin-left: 68px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .card {
+    width: 130px;
+    min-height: 150px;
+    height: fit-content;
+    /* margin: 0 auto; */
+    background-color: #5faeb6;
+    border-radius: 8px;
+    z-index: 4;
+  }
 }
