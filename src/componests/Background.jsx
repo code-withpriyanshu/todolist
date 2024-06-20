@@ -29,9 +29,8 @@ function Background() {
         >
           Add Note
         </button>
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[7vw] leading-none tracking-tighter font-semibold text-zinc-500 z-[2]">
-          ToDo-List
-        </h1>
+        <h1 className="todo">ToDo-List</h1>
+
         <div className="absolute top-0 left-0 w-full h-full flex flex-wrap z-[3] p-4">
           {cards.map((content, index) => (
             <Card key={index} content={content} reference={ref} />

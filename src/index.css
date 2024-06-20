@@ -95,6 +95,19 @@ button {
   overflow-wrap: break-word;
 }
 
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7vw;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: #71717a; /* zinc-500 */
+  z-index: 2;
+}
+
 @media screen and (max-width: 505px) {
   input {
     font-size: 12px;
@@ -121,5 +134,17 @@ button {
     background-color: #5faeb6;
     border-radius: 8px;
     z-index: 4;
+  }
+  .todo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-73%, -138%);
+    font-size: 8.4vw;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    color: #71717a;
+    z-index: 2;
   }
 }
