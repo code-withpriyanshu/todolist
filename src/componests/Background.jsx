@@ -1,10 +1,10 @@
 // import Card from "src/componests/card";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 function Background() {
   const [cards, setCards] = useState([]);
   const [inputValue, setInputValue] = useState("");
-
+  const ref = useRef(null);
   const addCard = () => {
     if (inputValue.trim() !== "") {
       setCards([...cards, inputValue]);
@@ -14,7 +14,7 @@ function Background() {
 
   return (
     <>
-      <div className="fixed w-full h-screen">
+      <div ref={ref} className="fixed w-full h-screen">
         <input
           type="text"
           className="absolute left-1/2 -translate-x-[100%] z-[4]"
@@ -34,7 +34,7 @@ function Background() {
         </h1>
         <div className="absolute top-0 left-0 w-full h-full flex flex-wrap z-[3] p-4">
           {cards.map((content, index) => (
-            <Card key={index} content={content} />
+            <Card key={index} content={content} reference={ref} />
           ))}
         </div>
       </div>
@@ -44,13 +44,13 @@ function Background() {
 
 export default Background;
 
-function Card({ content }) {
+function Card({ content, reference }) {
   return (
     <>
-      <motion.div drag className="card">
+      <motion.div drag dragConstraints={reference} className="card">
         <div className="tools">
           <div className="circle">
-            <span className="redd box" onClick={display}></span>
+            <span className="redd box"></span>
           </div>
           <div className="circle">
             <span className="yelloww box"></span>
@@ -63,9 +63,4 @@ function Card({ content }) {
       </motion.div>
     </>
   );
-}
-
-function display() {
-  let card = document.querySelector(".card");
-  card.style.visibility = "hidden";
 }
