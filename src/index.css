@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Playwrite VN";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+input {
+  font-size: 20px;
+  padding: 13px;
+  padding-left: 20px;
+  margin-left: 90px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+button {
+  padding: 17.5px;
+  text-transform: uppercase;
+  min-width: 100px;
+  font-size: 14px;
+  margin-left: 90px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+::selection {
+  color: rgb(232, 145, 47);
+}
+
+.card {
+  /* border: 1px solid red; */
+  padding: 8px;
+  height: 200px;
+  width: 200px;
+  background-color: #e6b905;
+}
+.content {
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+/* card */
+
+.card {
+  width: 190px;
+  height: 254px;
+  /* margin: 0 auto; */
+  background-color: #e9890c;
+  border-radius: 8px;
+  z-index: 4;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.redd {
+  background-color: #ff605c;
+}
+
+.yelloww {
+  background-color: #ffbd44;
+}
+
+.greenn {
+  background-color: #00ca4e;
+}
+.card__content {
+  padding: 3px;
+}
