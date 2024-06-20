@@ -15,20 +15,22 @@ function Background() {
   return (
     <>
       <div ref={ref} className="fixed w-full h-screen">
-        <input
-          type="text"
-          className="absolute left-1/2 -translate-x-[100%] z-[4]"
-          placeholder="enter notes"
-          id="value"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <button
-          className="absolute bg-zinc-300 left-1/2 -translate-x-[50%] z-[4]"
-          onClick={addCard}
-        >
-          Add Note
-        </button>
+        <div className="input-con">
+          <input
+            type="text"
+            className="absolute left-1/2 -translate-x-[100%] z-[4]"
+            placeholder="enter notes"
+            id="value"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+          <button
+            className="absolute bg-zinc-300 left-1/2 -translate-x-[50%] z-[4]"
+            onClick={addCard}
+          >
+            Add Note
+          </button>
+        </div>
         <h1 className="todo">ToDo-List</h1>
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-wrap z-[3] p-4">

@@ -125,6 +125,7 @@ button {
     margin-left: 68px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    height: 100%;
   }
   .card {
     width: 130px;
