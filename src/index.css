@@ -3,12 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bgc: #222831;
+  --bgcard: #eeeeee;
+  --h1color: #76abae;
+}
 * {
   font-family: "Playwrite VN";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+.temp-bg {
+  position: absolute;
+  background-color: #d1d5db;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgc);
+  padding: 2.5rem;
+}
+
 input {
   font-size: 20px;
   padding: 13px;
@@ -34,13 +56,6 @@ button {
   color: rgb(232, 145, 47);
 }
 
-.card {
-  /* border: 1px solid red; */
-  padding: 8px;
-  height: 200px;
-  width: 200px;
-  background-color: #e6b905;
-}
 .content {
   margin-top: 13px;
   font-size: 15px;
@@ -52,8 +67,9 @@ button {
   width: 190px;
   min-height: 254px;
   height: fit-content;
+  padding-left: 8px;
   /* margin: 0 auto; */
-  background-color: #5faeb6;
+  background-color: var(--bgcard);
   border-radius: 8px;
   z-index: 4;
 }
@@ -104,7 +120,7 @@ button {
   line-height: 1;
   letter-spacing: -0.05em;
   font-weight: 600;
-  color: #71717a; /* zinc-500 */
+  color: var(--h1color);
   z-index: 2;
 }
 @media screen and (max-width: 505px) {

@@ -24,10 +24,7 @@ function Background() {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
           />
-          <button
-            className="absolute bg-zinc-300 left-1/2 -translate-x-[50%] z-[4]"
-            onClick={addCard}
-          >
+          <button className="temp-bg" onClick={addCard}>
             Add Note
           </button>
         </div>

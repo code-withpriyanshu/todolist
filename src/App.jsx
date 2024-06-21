@@ -2,7 +2,7 @@ import Background from "./componests/Background";
 
 function App() {
   return (
-    <div className="relative w-full h-screen bg-zinc-800 p-10">
+    <div className="main-container">
       <Background />
     </div>
   );
