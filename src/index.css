@@ -145,7 +145,6 @@ button {
     width: 130px;
     min-height: 150px;
     height: fit-content;
-    background-color: #5faeb6;
     border-radius: 8px;
     z-index: 4;
   }
@@ -158,7 +157,6 @@ button {
     line-height: 1;
     letter-spacing: -0.05em;
     font-weight: 600;
-    color: #71717a;
     z-index: 2;
   }
 }
